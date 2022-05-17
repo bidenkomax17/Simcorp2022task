@@ -1,0 +1,50 @@
+<head>
+    <title>
+        SIMCORP2022
+    </title>
+</head>
+<body>
+<form name="loandata" id="loandata">
+    <table>
+        <tr><td colspan="3"><b>Enter Loan Information:</b></td></tr>
+        <tr>
+            <td>1)</td>
+            <td>Amount of the loan:</td>
+            <td><input type="text" name="principal" size="12" onchange="calculate();"></td>
+        </tr>
+        <tr>
+            <td>2)</td>
+            <td>Annual percentage rate of interest:</td>
+            <td><input type="text" name="interest" size="12" onchange="calculate();"></td>
+        </tr>
+        <tr>
+            <td>3)</td>
+            <td>Repayment period in years:</td>
+            <td><input type="text" name="years" size="12" onchange="calculate();"></td>
+        </tr>
+        <tr><td colspan="3">
+            <input type="button" value="Compute" onclick="calculate();">
+        </td></tr>
+        <tr><td colspan="3">
+            <b>Payment Information:</b>
+        </td></tr>
+        <tr>
+            <td>4)</td>
+            <td>Your monthly payment will be:</td>
+            <td><input type="text" name="payment" size="12"></td>
+        </tr>
+        <tr>
+            <td>5)</td>
+            <td>Your total payment will be:</td>
+            <td><input type="text" name="total" size="12"></td>
+        </tr>
+        <tr>
+            <td>6)</td>
+            <td>Your total interest payments will be:</td>
+            <td><input type="text" name="totalinterest" size="12"></td>
+        </tr>
+    </table>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
